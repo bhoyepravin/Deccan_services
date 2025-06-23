@@ -20,7 +20,7 @@ class SlideResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-photo';
 
     protected static ?string $navigationGroup = 'Home Page';
-    protected static ?int $sort = 1;
+    protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
     {
