@@ -18,7 +18,7 @@ class AcRepairContentResource extends Resource
     protected static ?string $navigationLabel = 'AC Repair Content';
     protected static ?string $modelLabel = 'AC Repair Content';
     protected static ?string $navigationGroup = 'Services';
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
     {

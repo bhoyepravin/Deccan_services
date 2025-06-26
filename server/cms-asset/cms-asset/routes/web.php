@@ -11,6 +11,12 @@ use App\Http\Controllers\Api\BenefitController;
 use App\Http\Controllers\Api\OfferingController;
 use App\Http\Controllers\Api\AboutUsController;
 use App\Http\Controllers\Api\AcRepairContentController;
+use App\Http\Controllers\Api\WashingMachineRepairController;
+use App\Http\Controllers\Api\WaterPurifierRepairController;
+use App\Http\Controllers\Api\MicrowaveRepairController;
+use App\Http\Controllers\Api\WhyChooseUsController;
+use App\Http\Controllers\Api\ContactInformationController;
+
 
 
 
@@ -24,6 +30,13 @@ Route::get('/api/benefits', [BenefitController::class, 'index']);
 Route::get('/api/what-we-offer', [OfferingController::class, 'index']);
 Route::get('/api/about-us', [AboutUsController::class, 'index']);
 Route::get('/api/ac-repair-content', [AcRepairContentController::class, 'index']);
+Route::get('/api/washing-machine-repair', [WashingMachineRepairController::class, 'index']);
+Route::get('/api/water-purifier-repair', [WaterPurifierRepairController::class, 'index']);
+Route::get('/api/microwave-repair', [MicrowaveRepairController::class, 'index']);
+Route::get('/api/why-choose-us', [WhyChooseUsController::class, 'index']);
+Route::get('/api/contact-info', [ContactInformationController::class, 'index']);
+
+
 
 // Web Route
 Route::get('/', function () {
