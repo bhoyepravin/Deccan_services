@@ -36,6 +36,7 @@ class SlideResource extends Resource
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
+                ->disk('public_uploads')
                     ->image()
                     ->directory('slides')
                     ->required(),
@@ -55,7 +56,8 @@ class SlideResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                ->disk('public_uploads'),
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('subtitle')

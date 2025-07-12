@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+             ->brandName('Deccan Services') // Add this line
             ->colors([
                 'primary' => Color::Amber,
             ])

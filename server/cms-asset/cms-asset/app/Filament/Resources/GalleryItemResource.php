@@ -23,6 +23,7 @@ class GalleryItemResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Select::make('type')
+                ->disk('public_uploads')
                     ->options([
                         'image' => 'Image',
                         'video' => 'YouTube Video'
@@ -93,6 +94,7 @@ class GalleryItemResource extends Resource
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('type')
+                ->disk('public_uploads')
                     ->options([
                         'image' => 'Image',
                         'video' => 'Video',
